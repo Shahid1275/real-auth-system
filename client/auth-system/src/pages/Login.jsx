@@ -120,7 +120,7 @@ const Login = () => {
               className="mb-4 text-indigo-500 cursor-pointer"
               onClick={() => navigate("/reset-password")}
             >
-              Forget password
+              Forget password?
             </p>
           )}
           <button
