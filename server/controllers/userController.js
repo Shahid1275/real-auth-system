@@ -4,13 +4,15 @@ const getUserData = async (req, res) => {
   try {
     // Get user ID from authenticated request (via token)
     const userId = req.user._id;
-    
-    const user = await userModal.findById(userId).select('-password -verifyOtp -verifyOtpExpireAt');
-    
+
+    const user = await userModal
+      .findById(userId)
+      .select("-password -verifyOtp -verifyOtpExpireAt");
+
     if (!user) {
       return res.status(404).json({
         success: false,
-        message: "User not found"
+        message: "User not found",
       });
     }
 
@@ -20,7 +22,7 @@ const getUserData = async (req, res) => {
         name: user.name,
         _id: user._id,
         email: user.email,
-        isAccountVerified: user.isAccountVerified
+        isAccountVerified: user.isAccountVerified,
       },
       message: "User data fetched successfully",
     });
@@ -29,9 +31,9 @@ const getUserData = async (req, res) => {
     return res.status(500).json({
       success: false,
       message: "Internal server error",
-      error: error.message
+      error: error.message,
     });
   }
-}
+};
 
 export default getUserData;
