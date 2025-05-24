@@ -51,18 +51,6 @@ JWT_SECRET=your_secure_jwt_secret
 # Server port
 PORT=3000
 
-# Cloudinary credentials (for image uploads)
-
-CLOUDINARY_CLOUD_NAME=your_cloud_name
-
-CLOUDINARY_API_KEY=your_api_key
-
-CLOUDINARY_API_SECRET=your_api_secret
-
-# Stripe secret key (for payments)
-
-STRIPE_SECRET_KEY=your_stripe_secret_key
-
 # SMTP configuration (for sending emails)
 
 SMTP_HOST=smtp.gmail.com
@@ -106,18 +94,6 @@ npm run dev
 # Start service
 sudo systemctl start mongod
 
-# ☁️ Cloudinary Setup
-
-Sign up at Cloudinary
-Get credentials from dashboard
-Add to backend/.env
-
-# 💳 Stripe Setup
-
-Create account at Stripe
-Get API keys from developer dashboard
-Add to both backend and frontend .env files
-
 
 # Backend
 
@@ -138,8 +114,8 @@ npm run build
 # 🤝 Contributing Guidelines
 
 Fork the repository
-Create feature branch: git checkout -b feature/feature-name
 
+Create feature branch: git checkout -b feature/feature-name
 
 Commit changes: git commit -m "Descriptive message"
 
