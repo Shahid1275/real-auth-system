@@ -24,7 +24,8 @@ Media Storage
 Cloudinary
 Notifications
 Nodemailer, Twilio (SMS)
-🚀 Quick Start Guide
+
+# 🚀 Quick Start Guide
 Prerequisites
 
 Node.js v20.x+
